@@ -1,7 +1,7 @@
 # yanktmp.vim
 https://github.com/rtakasuke/yanktmp.vim
 
-##概要
+## 概要
 異なるプロセス間での yank & paste を可能にするVimプラグインです。  
 screenやtmuxを使っている方におすすめです。  
 
@@ -13,21 +13,21 @@ https://github.com/vim-scripts/yanktmp.vim
 オリジナルを基に改造を加えています。
   
 
-##オリジナルとの違い
+## オリジナルとの違い
 オリジナルは行単位でのyankのみでしたが、  
 文字単位でのyankもできるようになりました。  
 ただし、矩形選択はごめんなさい。  
 
 
-##使い方
-####インストール
+## 使い方
+#### インストール
 NeoBundleの場合
 
 ```
 NeoBundle 'rtakasuke/yanktmp.vim'
 ```
 
-####キーマッピング
+#### キーマッピング
 
 ```
 map <silent> sy :call YanktmpYank()<CR>
@@ -35,7 +35,7 @@ map <silent> sp :call YanktmpPaste_p()<CR>
 map <silent> sP :call YanktmpPaste_P()<CR>
 ```
 
-####tempファイル
+#### tempファイル
 デフォルトは `/tmp/vimyanktmp` および `/tmp/vimyanktmp_mode` です。  
 下記のように設定すれば変更もできます。
 
